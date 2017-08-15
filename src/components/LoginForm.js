@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { emailChanged, passwordChanged,loginUser } from '../actions';
+import { emailChanged, passwordChanged, loginUser } from '../actions';
 import { Card, CardSection, Input, Button } from './common';
 
 
@@ -14,7 +14,7 @@ class LoginForm extends Component {
   }
 
   onButtonPress() {
-    const {email, password} = this.props;
+    const { email, password } = this.props;
 
     this.props.loginUser({ email, password });
   }
@@ -48,7 +48,6 @@ class LoginForm extends Component {
     );
   }
 }
-
 
 const mapStateToProps = state => {
   return {
